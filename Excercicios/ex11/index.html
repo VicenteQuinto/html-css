@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em varios dipositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+   
+    <picture>
+        
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+        <!--Esse comandos redimenssionam o tamanho da imagem de acordo com o a tela(celular, tablet ou computador. Geralmente o tamanho padão das telas para não criarem barra de rolagem são esses ai em cima)-->
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop><!--o premold é mais para informações do play (duração de tempo, tempo total.Existem 3 parametros (auto,metadata, none) É recomendado colocar o metadata)-->
+        <!--O loop é pra quando a musica terminar, ela começar novamente automaticamente-->
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <source src="midia/musica.wav" type="audio/wav"><!--Tentar evitar de colocar no site os arquviso em formato wav por ser muito pesado-->
+        <p>Infelizmente seu navegador não consegue baixar áudio</p><a
+        href="midia/musica.mp3">Clique aqui para baixar o arquivo mp3</a>
+
+        <!--<audio src="midia/musica.mp3" controls autoplay></audio>--><!--Maneira mais simples de colocar um audio no site-->
+    <!--O comando autoplay coloca no site a barra de contagem de tempo do play OBS: isso em alguns navegadoeres. Caso não aparece você vai ter que colocar o controls antes do autoplay-->
+    <!--A maioria dos navegadoeres são compativeis com os formatos MP3, WAV e o OGG-->
+    </audio>
+  
+</body>
+</html>

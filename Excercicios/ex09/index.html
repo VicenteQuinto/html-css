@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas - 1ºEXEMPLO</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="100"><!--Lista ordenada do tipo numerica começando do 100 por exemplo. Tem os types: 1,A,a,I,i-->
+        <li>Acordar</li><!--Cada item de lista-->
+        <li>Tomar Café</li><!--Cada item de lista-->
+        <li>Escovar os dente</li><!--Cada item de lista-->
+        <li>Ir para faculdade</li>
+        <li>Voltar pra casa</li>
+        <li>Tomar banho</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol><!--Listas ordenadas-->
+    <h2>Listas não Ordenadas -  2º Exemplo</h2>
+    <ul type="circle"><!--Lista não ordenada. Pode ser (circule, square,disc).-->
+    <li>Pão</li>
+    <li>Queijo</li>
+    <li>Alface</li>
+    <li>Tomate</li>
+    <li>Molho</li>
+    </ul>
+    </ol>
+    <h2>Minhas Linguagens Favoritas</h2><!--Lista com Li dentro de OL-->
+    <ol>
+        <li>Antigas</li>
+        <ol type="a"><!--Aqui coloca a lista com letras (a,b,c,e)-->
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+            <li>C++</li>
+            <li>JavaScripit</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="6"><!--Aqui coloca a lista com letras (f,g,hi,) que é a continução da lista anterior-->
+            <li>Php</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos Favoritos</h2><!--Lista com UL dentro de Li-->
+    <ol>
+        <li>NES</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                   <ul type="disc">
+                       <li>Mario Bros 3</li>
+                       <li>Mario Loves</li>
+                   </ul>
+                <li>Ninja Guiden</li>
+            </ul>
+            <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castlavania</li>
+            </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+      <dl><!--Lista de Definição-->  
+      
+         <dt>Html</dt><!--O dt é o termo-->
+          <dd>Linguagem de marcação  para criação de um site.</dd><!--Definiçã-->
+          <dt>CSS</dt>
+           <dd>Linguagem de marcação para criação do designer de um site.</dd>
+            <dt>JavaScrip</dt>
+             <dd>Linguagem de programação para a criação de ums site com interatividade</dd>
+    </dl>
+    </ul>
+</body>
+</html>

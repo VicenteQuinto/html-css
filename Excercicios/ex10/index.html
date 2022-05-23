@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+    <style>
+        body{
+            background-color: blueviolet;
+                
+        }
+        h1{
+                font: normal 20pt arial;
+                color: white;
+            }
+
+            p{
+                font: normal 15pt arial;
+                color: white;
+            }
+
+            a{
+                font: normal 15pt arial;
+                color: rgb(137, 245, 218);
+            }
+            
+    </style>
+    </head>
+<body>
+    <h1>Usando Links Externos</h1>
+  <p>Você pode acessar o site 99Lances <a href="http://srv52.teste.website/~lancescom/" target="_blank" rel="external"> através do link</a></p>
+  <p>Esse outro <a href="http://srv52.teste.website/~lancescom/gerencial" target="_blank" rel="external">link</a> leva direto para o gerencial da pagina</p><br> 
+    <!-- Para abrir um site em outra aba sem fechar o seu, coloca-se o comando target="_blank" rel="external"-->
+    
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira pagina do site. Se você quiser acessar a minha <a href="pag002.html" rel="next" target="_self">segunda pagina</a></p>
+    <p>Está página é um oferecimento da <a href="http://srv52.teste.website/~lancescom/" target="_blank" rel="nofollow">99Lances</a></p>
+    <!-- Para buscar a pagina indicada pelo href, a pagina a ser buscada tem que estar na mesma pagina do index.html-->
+    <!-- o comando next joga para a proxima pagina de navegacao. Isso ajuda o mecanismo de busca como o google-->
+    <!--o nofollow diz para o mecanismo de busca que eu não dou um aval para o conteudo, ou seja, o site-->
+    <!--o comando target="_self" diz para o link abrir a pagina na propria aba- Obs: posso ou não colocar o tager para indicar-->
+    <p>Você pode acessa a nossa pagina de noticias <a href="noticias/pag003.html" rel="next" target="_self">paga ficar sabendo de tudo que acontece no Brasil e no Mundo.</a></p><br>
+    <!--Para acessar uma pagina que não esteja na mesma pagina no index.html, coloca-se o comando href com o endereço da pasta junto com a pagina criada no html-->
+    <h1>Links para Download</h1>
+    <ul>
+         <li type="circle"><a href="livro/BoletimEletronico.pdf" download="BoletimEletronico" type="application/pdf">Baixar em pdf</a></li>
+         <li type="circle"><a href="livro/BoletimEletronico.zip" download="BoletimEletronico" type="application/zip">Baixar zipado</a></li>
+    </ul>
+</body>
+</html>

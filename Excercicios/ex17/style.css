@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+
+body{
+    background-image: linear-gradient(to right, #F1D8C9, #f2c3af);/*Configura a cor de fundo do body em degradê*/
+    
+
+}
+main{
+    background-color: white;/*Configura a cor do main*/
+    border-radius: 10px;/*Arredonda as bordas do main*/
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);/*Coloca sombra no main*/
+    width: 600px; /*O Comando width quer dizer largura*/
+    padding: 10px;/*Acochoamento do texto dentro do main*/
+    margin: auto;/*Centraliza o main no maio da tela*/
+}
+
+p{
+    text-align: justify;/*Coloca o paragrago p em justificado*/
+}
+
+h2{
+    color: #125189; /*Configura a cor do h2*/
+    text-align: justify;/*Coloca o paragrago p em justificado*/
+}
+h1{
+    color: #F39209;/*Configura a cor do h1*/
+    text-align: center;/*Coloca o paragrago p em justificado*/
+    text-shadow: 1px 1px 2px rgb(129, 77, 5, 0,726);/*Configura a sombra do texto do h1*/
+
+}
