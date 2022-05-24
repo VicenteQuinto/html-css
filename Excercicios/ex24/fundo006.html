@@ -13,10 +13,14 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;/*O cover cobre a tela inteira independente do tamanho da tela*/
+            background-attachment: fixed; /*Rola o conteudo sem rolar o fundo. Tem o scroll que rola os dois*/
+
+            /*shorthand no bacground
+            color > imag > position > repeat > *size > attachment*/
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
