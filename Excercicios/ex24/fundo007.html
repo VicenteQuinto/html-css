@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;/*Altura*/
+            background-color: purple;/*Fundo*/
+            padding: 10px;
+
+        }
+        #conteudo{
+            position: absolute;
+            height: 200px;/*Altura*/
+            width: 400px;
+            background-color: yellow;/*Fundo*/
+
+            /*Leva o conteudo para o centro da tela. Para isso é preciso o container está com o position:relative e o conteudo esta com o position:absolute*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
