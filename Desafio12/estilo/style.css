@@ -10,9 +10,18 @@
     --fonte2:'Passion One', cursive;
     --fonte3:'Sriracha', cursive;
 
+    /*CORES UTILIZADAS NO PROJETO*/
+
+    --cor1:#000000;
+    --cor2:#a9a9a9;
+    --cor3:#ffffff;
+    --cor4:#00000070;
+    --cor5:#363636;
+
+
 }
 
-
+/*Configurações Globais*/
 *{
     margin: 0px;
     padding: 0px;
@@ -21,12 +30,12 @@
 
 html,body{
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: var(--cor2);
     font-family: var(--fonte1);
 }
 header{
-    background-color: black;
-    color: white;
+    background-color:var(--cor1);
+    color:var(--cor3);
     text-align: center;
 }
 header > h1{
@@ -42,7 +51,7 @@ header > p{
 }
 header a, footer a{
     text-decoration: none;
-    color: white;
+    color:var(--cor3);
     font-weight: bolder;
 }
 header a:hover, footer a:hover{
@@ -56,32 +65,51 @@ section{
     padding-left: 30px;
     line-height: 2em; /*Espaçamento entre linhas*/
     font-family: var(--fonte3);
-    font-size: 3.5vw;/*Configura a fonte automaticamente  para a largura da tela. Não é a melhor opção, porem funciona*/
+    font-size: 2.5vw;/*Configura a fonte automaticamente  para a largura da tela. Não é a melhor opção, porem funciona*/
     
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
-    background-color: white;
-    color: black;
+    background-color:var(--cor3);
+    color:var(--cor1);
 }
 
 section.imagem{
-    background-color: rgb(54, 54, 54);
-    color: white;
+    background-color: var(--cor5);
+    color:var(--cor3);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment:fixed;/*O fixed fixa a imagem no fundo para quando rolar o mouse ela ficar fixa movendo 
+    apenas o conteudo*/
 }
 
 section.imagem > p{
     /*width: 400px;. Foi colocado para ficar um quadrado na section*/
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color:var(--cor4);
     display: inline-block;/* Se adapta ao tamanho da caixa do conteudo onte foi colocado a width*/
     padding: 5px;
+    text-shadow: 1px 1px 0px black;/*Coloca sombra no texto*/
+}
 
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    
 
 }
 
 footer{
-    background-color: black;
+    background-color:var(--cor1);
     text-align: center;
-    color: white;
+    color:var(--cor3);
     padding: 10px ;
 }
