@@ -1,13 +1,28 @@
 @charset "UTF-8";
 
+
+/*FONTES UTILIZADAS NO PROJETO PEGAS NO GOOGLE FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html,body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -15,12 +30,15 @@ header{
     text-align: center;
 }
 header > h1{
+    font-size: 10vw;/*Configura a fonte automaticamente  para a largura da tela. Não é a melhor opção, porem funciona*/
     padding-top: 50px;
+    font-family: var(--fonte2);
     font-variant: small-caps;/*Transforma as letras em maiuscula, porém da enfase nas primeiras letras iniciais*/
     /*text-transform: uppercase; Trasnforma as letras em maiuscula*/
 }
 header > p{
     padding-bottom: 50px;
+    
 }
 header a, footer a{
     text-decoration: none;
@@ -35,8 +53,11 @@ header a:hover, footer a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em; /*Espaçamento entre linhas*/
     padding-left: 30px;
+    line-height: 2em; /*Espaçamento entre linhas*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;/*Configura a fonte automaticamente  para a largura da tela. Não é a melhor opção, porem funciona*/
+    
 }
 
 section.normal{
@@ -50,8 +71,11 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    /*width: 400px;. Foi colocado para ficar um quadrado na section*/
     background-color: rgba(0, 0, 0, 0.397);
+    display: inline-block;/* Se adapta ao tamanho da caixa do conteudo onte foi colocado a width*/
+    padding: 5px;
+
 
 }
 
