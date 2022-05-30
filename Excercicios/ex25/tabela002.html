@@ -8,10 +8,12 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+
         }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
         td,th{
@@ -29,6 +31,16 @@
         thead, tfoot{
             background-color: rgb(87, 87, 87);
             color: white;
+        }
+        thead > tr > th{/*Deixa o cabeçalho fixo na hora de rolar o mouse. Para isso é preciso deixar a table em position relative*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(87, 87, 87);           
+        }
+
+        tbody > tr:nth-child(odd) {/*Coloca o zebrado na linha impar*/
+            background-color: lightgrey;
+
         }
         td.num{
             text-align: right;
@@ -52,8 +64,8 @@
         <caption>População das Unidades Federativas do Brasil</caption>
         <thead><!--Cabeça  da tabela-->
             <tr> <!--Linha  da tabela-->
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:50px">População</th>
 
             </tr>
 
@@ -172,7 +184,7 @@
         </tbody> 
         <tfoot><!--Rodapé  da tabela-->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.245.541</strong></td>
             </tr>    
 
